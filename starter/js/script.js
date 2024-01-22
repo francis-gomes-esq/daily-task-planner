@@ -53,6 +53,7 @@ $(document).ready(function () {
 		$('.container').append(timeBlock)
 	}
 
+	// Save event to local storage when the save button is clicked
 	$('.saveBtn').on('click', function () {
 		var hour = $(this).attr('data-hour')
 		var event = $(this).siblings('.description').val()
@@ -60,5 +61,6 @@ $(document).ready(function () {
 		localStorage.setItem('event_' + hour, event)
 	})
 
+	// Call functions to initialize the daily-task-planner
 	updateColors()
 })
