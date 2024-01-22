@@ -33,4 +33,18 @@ $(document).ready(function () {
 			}
 		})
 	}
+	for (var hour = 9; hour <= 17; hour++) {
+		var timeBlock = $('<div').addClass('row time-block')
+		var hourColumn = $('<div')
+			.addClass('col-md-1 hour')
+			.text(dayjs().hour(hour).format('hA'))
+		var textArea = $('<textarea>')
+			.addClass('col-md-10 description')
+			.attr('data-hour', hour)
+		var saveButton = $('<button>').addClass('col-md-1 saveBtn').text('save')
+		attr('data-hour', hour)
+
+		timeBlock.append(hourColumn, textArea, saveButton)
+		$('.container').append(timeBlock)
+	}
 })
