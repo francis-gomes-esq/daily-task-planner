@@ -33,6 +33,8 @@ $(document).ready(function () {
 			}
 		})
 	}
+
+	// Create timeblocks for standard business hours
 	for (var hour = 9; hour <= 17; hour++) {
 		var timeBlock = $('<div').addClass('row time-block')
 		var hourColumn = $('<div')
