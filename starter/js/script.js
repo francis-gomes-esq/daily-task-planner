@@ -6,6 +6,7 @@ $(document).ready(function () {
 	function updateColors() {
 		var currentHour = dayjs().hour()
 		console.log('currentHour: ' + currentHour)
+
 		$('.time-block').each(function () {
 			var blockHour = parseInt(
 				$(this).children('textarea').attr('data-hour')
@@ -36,17 +37,28 @@ $(document).ready(function () {
 
 	// Create timeblocks for standard business hours
 	for (var hour = 9; hour <= 17; hour++) {
-		var timeBlock = $('<div').addClass('row time-block')
-		var hourColumn = $('<div')
+		var timeBlock = $('<div>').addClass('row time-block')
+		var hourColumn = $('<div>')
 			.addClass('col-md-1 hour')
 			.text(dayjs().hour(hour).format('hA'))
 		var textArea = $('<textarea>')
 			.addClass('col-md-10 description')
 			.attr('data-hour', hour)
-		var saveButton = $('<button>').addClass('col-md-1 saveBtn').text('save')
-		attr('data-hour', hour)
+		var saveButton = $('<button>')
+			.addClass('col-md-1 saveBtn')
+			.text('save')
+			.attr('data-hour', hour)
 
 		timeBlock.append(hourColumn, textArea, saveButton)
 		$('.container').append(timeBlock)
 	}
+
+	$('.saveBtn').on('click', function () {
+		var hour = $(this).attr('data-hour')
+		var event = $(this).siblings('.description').val()
+
+		localStorage.setItem('event_' + hour, event)
+	})
+
+	updateColors()
 })
