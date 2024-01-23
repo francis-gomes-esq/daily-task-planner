@@ -19,7 +19,7 @@ N/A
 
 ## Usage
 
-[You can view the website via this link](https://francis-gomes-esq.github.io/daily-task-planner/)
+You can view the website via this link: https://francis-gomes-esq.github.io/daily-task-planner/
 
 ## The below animation demonstrates the application functionality:
 
