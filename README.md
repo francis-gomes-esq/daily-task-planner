@@ -21,9 +21,7 @@ N/A
 
 [You can view the website via this link](https://)
 
-The following animation demonstrates the application functionality:
-
-## Animated gif
+## The below animation demonstrates the application functionality:
 
 -   ![alt text](./images/daily-task-planner.gif)
 
@@ -37,8 +35,8 @@ The following animation demonstrates the application functionality:
 
 ## Credits
 
--   Tutoring session
--
+-   Tutoring session with Sangeetha
+-   Lecture by Joe Rehfuss
 
 ### List of third-party assets.
 
