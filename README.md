@@ -13,19 +13,27 @@ Throughout the developmental process, I gained valuable insights into employing 
 -   [Installation](#installation)
 -   [Usage](#usage)
 -   [Credits](#credits)
--   [License](#license)
-
-## Installation
+-   [License](#license)ation
 
 N/A
 
 ## Usage
 
-You can view the website via this link: [add link here]
+[You can view the website via this link](https://)
 
 The following animation demonstrates the application functionality:
 
-![A user clicks on slots on the color-coded calendar and edits the events.] (./images/[enter-path-here].gif)
+## Animated gif
+
+-   ![alt text](./images/daily-task-planner.gif)
+
+## Screenshots
+
+-   ![alt text](./images/daily-task-planner.png)
+-   ![alt text](./images/daily-task-planner-2.png)
+-   ![alt text](./images/start-display-current-day.png)
+-   ![alt text](./images/start-display-current-day-2.png)
+-   ![alt text](./images/start-display-current-day-3.png)
 
 ## Credits
 
